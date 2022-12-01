@@ -1,4 +1,8 @@
 <template>
+  <head>
+  <link rel="icon" type="image/svg" href="~/assets/videos/icon.svg">
+</head>
+
   <!-- The video -->
 <video autoplay muted loop id="myVideo">
   <source src="~/assets/videos/myself.mp4" type="video/mp4">
@@ -58,7 +62,7 @@
   margin: auto;
   width: 50%;
   text-align: center;
-  
+  display:flexbox
   
 }
 
