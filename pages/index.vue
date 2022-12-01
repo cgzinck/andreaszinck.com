@@ -6,11 +6,10 @@
 
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
-  <h1>Heading</h1>
-  <p>Hello Nisse</p>
-  <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <h1>Visual artist <a href="https://www.instagram.com/zinck.3d/">@zinck.3d</a></h1>
+  <p>3D art & modeling, graphic design, sound design, video producing.</p>
 </div>
+
 </template>
 
 <script setup></script>
@@ -29,25 +28,41 @@
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  background: rgba(87, 193, 255, 0.5);
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   padding: 20px;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+/* unvisited link */
+a:link {
+  color: rgb(255, 255, 255);
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+/* visited link */
+a:visited {
+  color: rgb(255, 132, 202);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 175, 215);
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
 }
 </style>
