@@ -1,6 +1,6 @@
 <template>
   <head>
-  <link rel="icon" type="image/svg" href="~/assets/videos/icon.svg">
+  <link rel="icon" type="image/png" href="~/assets/videos/icon.png">
 </head>
 
   <!-- The video -->
@@ -44,6 +44,7 @@
 
 /* Add some content at the bottom of the video/page */
 .content {
+  display: flexbox;
   position: fixed;
   bottom: 0;
   background: rgba(87, 193, 255, 0.5);
