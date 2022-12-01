@@ -1,6 +1,6 @@
 <template>
   <head>
-  <link rel="icon" type="image/png" href="/assets/videos/icon.png">
+  <link rel type="image/png" href="assets\videos\icon.png">
 </head>
 
   <!-- The video -->
@@ -73,7 +73,7 @@ font-family:UnivaNova-LightItalic;
 }
 /* unvisited link */
 a:link {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 181, 249);
 }
 
 /* visited link */
