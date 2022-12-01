@@ -3,11 +3,14 @@
 <video autoplay muted loop id="myVideo">
   <source src="~/assets/videos/myself.mp4" type="video/mp4">
 </video>
-
+<div class="loader">Loading...</div>
+<div class="Construction">
+  <h1>WEBSITE BEING DEVELOPED</h1>
+</div>
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>Visual artist <a href="https://www.instagram.com/zinck.3d/">@zinck.3d</a></h1>
-  <p>3D art & modeling, graphic design, sound design, video producing.</p>
+  <p>3D art & modeling, graphic design, sound design, video editing, livestreaming</p>
 </div>
 
 </template>
@@ -31,10 +34,21 @@
   background: rgba(87, 193, 255, 0.5);
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
   width: 100%;
   padding: 20px;
 }
 
+.Construction {
+  position:relative;
+  color:#fcfcfc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  text-shadow: #a1dcff 5px 0 5px;;
+  
+}
 /* unvisited link */
 a:link {
   color: rgb(255, 255, 255);
@@ -42,7 +56,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(255, 132, 202);
+  color: rgb(253, 162, 181);
 }
 
 /* mouse over link */
@@ -51,7 +65,7 @@ a:hover {
 }
 
 a:link {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
@@ -65,4 +79,63 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
 </style>
