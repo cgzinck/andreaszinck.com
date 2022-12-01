@@ -1,6 +1,6 @@
 <template>
   <head>
-  <link rel="icon" type="image/png" href="~/assets/videos/icon.png">
+  <link rel="icon" type="image/png" href="/assets/videos/icon.png">
 </head>
 
   <!-- The video -->
@@ -19,7 +19,8 @@
 
 </template>
 
-<script setup></script>
+<script setup>const newLocal = "~/assets/videos/icon.png";
+</script>
 
 <style scoped>
 /* Style the video: 100% width and height to cover the entire window */
