@@ -10,10 +10,7 @@
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>Visual artist <a href="https://www.instagram.com/zinck.3d/">@zinck.3d</a></h1>
-  <p id="Desc">
-  <span style="font-size:28px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">3D art & modeling, graphic design, sound design, video editing, livestreaming</span>
-</p>
-  
+  <p class="hej"><small>3D art & modeling, graphic design, sound design, video editing, livestreaming</small></p>
 </div>
 
 </template>
@@ -30,13 +27,24 @@
   min-height: 100%;
 }
 
+@font-face {
+  font-family: 'UnivaNova-LightItalic';
+  src: url(assets\fonts\UnivaNova-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'UnivaNova-SemiBoldItalic';
+  src: url(assets\fonts\UnivaNova-SemiBoldItalic.ttf);
+
+}
+
 /* Add some content at the bottom of the video/page */
 .content {
   position: fixed;
   bottom: 0;
   background: rgba(87, 193, 255, 0.5);
   color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: UnivaNova-SemiBoldItalic;
   font-size:250%;
   width: 100%;
   padding: 20px;
@@ -46,13 +54,16 @@
 .Construction {
   position:relative;
   color:#fcfcfc;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: UnivaNova-SemiBoldItalic;
   margin: auto;
   width: 50%;
   text-align: center;
-  text-shadow:#7fd0ff 5px 0 5px;;
   
   
+}
+
+.hej {
+font-family:UnivaNova-LightItalic;
 }
 /* unvisited link */
 a:link {
