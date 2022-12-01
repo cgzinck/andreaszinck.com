@@ -46,7 +46,7 @@
   margin: auto;
   width: 50%;
   text-align: center;
-  text-shadow: #a1dcff 5px 0 5px;;
+  text-shadow:#7fd0ff 5px 0 5px;;
   
 }
 /* unvisited link */
